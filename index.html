@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required><br><br>
+
+        <label for="terms">
+            <input type="checkbox" id="terms" required> Accept Terms
+        </label><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <h3>Registered Users:</h3>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Dob</th>
+                <th>Accepted terms?</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- User data will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
